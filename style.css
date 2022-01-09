@@ -6,14 +6,34 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(215, 144, 243);
+    font-family: "Readex Pro";
+    line-height: 1.6;
+    height: 100vh;
+    
+}
+
+.capsue{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: rgba(221, 105, 206, 0.226);
+    background-color: rgb(146, 105, 221);
     font-family: "Readex Pro";
 
+}
+
+nav a:hover{
+    color: rgba(235, 195, 221, 0.548);
 }
 
 .emblem {
@@ -43,4 +63,23 @@ nav {
     font-size: 18px;
     text-decoration: none;
     font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section h1{
+    font-size: 4rem;
+}
+
+section p {
+    font-size: 1.5rem;
 }
