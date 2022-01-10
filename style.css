@@ -125,7 +125,7 @@ section p {
 }
 
 .icon {
-    padding: 25px;
+    padding: 45px;
     display: flex;
     margin: 5px;
     justify-content: space-around;
@@ -134,17 +134,17 @@ section p {
 
 .fa-envelope-square {
     color: rgb(154, 176, 202);
-    margin-left: 15px;
+    padding: 15px;
 }
 
 .fa-linkedin {
     color: rgb(154, 176, 202);
-    margin-left: 10px;
+    padding: 15px;
 }
 
 .fa-github {
     color: rgb(154, 176, 202);
-    margin-right: 10px;
+    padding: 15px;
 }
 
 
@@ -168,5 +168,10 @@ section p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
