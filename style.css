@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 * {
     margin: 0px;
@@ -7,7 +8,8 @@
 }
 
 body {
-    font-family: "Readex Pro";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     background: rgb(88, 78, 97);
     color: #fff;
     height: 100vh;
@@ -19,22 +21,25 @@ body {
 .container {
     width: 100%;
     height: 100%;
-
     scrollbar-width: none;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
 
+.myPort {
+    margin-right: 60px;
+    font-size: 35px;
+}
 
 .navbar {
     position: fixed;
     width: 100%;
     align-items: center;
-
     background-color: rgba(88, 145, 199, 0.76);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 
-    font-family: "Readex Pro";
 }
 
 .navbar ul {
@@ -49,11 +54,16 @@ body {
 .navbar ul li {
     margin: 0 5rem;
     padding: 5px;
+
 }
 
+nav a {
+    transition: all .2s ease-in-out;
+}
 
 nav a:hover {
     color: rgba(235, 195, 221, 0.548);
+    transition: all .2s ease-in-out;
 }
 
 .emblem {
@@ -75,7 +85,7 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     width: 45%;
-    font-family: "Readex Pro";
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
 
@@ -106,10 +116,12 @@ section h1 {
 }
 
 section p {
+    font-weight: bold;
     font-size: 1.8rem;
 }
 
 .aboutMe {
+    font-weight: bold;
     font-style: italic;
 }
 
@@ -124,19 +136,22 @@ section p {
 .fa-envelope-square {
     color: rgb(154, 176, 202);
     padding: 15px;
+    transition: all .5s ease-in-out;
 }
 
 .fa-linkedin {
     color: rgb(154, 176, 202);
     padding: 15px;
+    transition: all .5s ease-in-out;
 }
 
 .fa-github {
     color: rgb(154, 176, 202);
     padding: 15px;
+    transition: all .5s ease-in-out;
 }
 
-
+/* 
 .fa-linkedin:hover {
     color: rgb(169, 101, 200);
     cursor: pointer;
@@ -144,19 +159,42 @@ section p {
     box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.281),
         0 0 5px 5px rgba(199, 52, 199, 0.267),
         0 0 2px 2px rgba(0, 255, 255, 0.219);
-    border-radius: 50%;
+    border-radius: 30%;
+}
+*/
+
+.fa-linkedin:hover {
+    color: rgba(225, 210, 233, 0.692);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.281),
+        0 0 5px 5px rgba(199, 52, 199, 0.267),
+        0 0 2px 2px rgba(0, 255, 255, 0.219);
+    border-radius: 30%;
 }
 
-.fa-github:hover {
+/* .fa-github:hover {
     color: rgb(169, 101, 200);
     cursor: pointer;
     transition: all .5s ease-in-out;
     box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.281),
         0 0 5px 5px rgba(199, 52, 199, 0.267),
         0 0 2px 2px rgba(0, 255, 255, 0.219);
-    border-radius: 50%;
+    border-radius: 30%;
+}  
+*/
+
+.fa-github:hover {
+    color: rgba(225, 210, 233, 0.692);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.281),
+        0 0 5px 5px rgba(199, 52, 199, 0.267),
+        0 0 2px 2px rgba(0, 255, 255, 0.219);
+    border-radius: 30%;
 }
 
+/*
 .fa-envelope-square:hover {
     color: rgb(169, 101, 200);
     cursor: pointer;
@@ -164,7 +202,18 @@ section p {
     box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.281),
         0 0 5px 5px rgba(199, 52, 199, 0.267),
         0 0 2px 2px rgba(0, 255, 255, 0.219);
-    border-radius: 50%;
+    border-radius: 30%;
+}
+ */
+
+.fa-envelope-square:hover {
+    color: rgba(225, 210, 233, 0.692);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.281),
+        0 0 5px 5px rgba(199, 52, 199, 0.267),
+        0 0 2px 2px rgba(0, 255, 255, 0.219);
+    border-radius: 30%;
 }
 
 .adresses {
@@ -186,42 +235,39 @@ section#myName {
 
 section#About {
     background-color: rgb(233, 118, 118);
-    background: linear-gradient(180deg, rgb(209, 128, 128) 0%, rgb(250, 168, 91) 100%);
+    background: linear-gradient(180deg, rgb(206, 95, 95) 0%, rgb(250, 168, 91) 100%);
 }
 
 section#Projects {
     background-color: rgb(108, 138, 69);
-    background: linear-gradient(120deg, rgb(148, 189, 94) 0%, rgb(71, 143, 161) 100%);
+    background: linear-gradient(120deg, rgb(126, 187, 45) 0%, rgb(4, 138, 172) 100%);
+}
+
+/* rgb(90, 85, 105) */
+
+section#Contact {
+    background-color: rgb(90, 85, 105);
+    background: linear-gradient(120deg, rgb(90, 85, 105)0%, rgb(66, 33, 163) 100%);
 }
 
 .proj {
     margin-bottom: 10px;
 }
 
-.genProject {
+.project {
     display: flex;
     margin: 5px;
     float: left;
     border: 6px white solid;
-    border-radius: 10px;
+    border-radius: 8px;
+    transition: transform .3s;
 }
 
-.genButton {
-    position: relative;
-
-}
-
-
-.weatherProject {
-    display: flex;
-    margin: 5px;
-    float: left;
-    border: 6px white solid;
-    border-radius: 10px;
-}
-
-section#Contact {
-    background-color: rgb(90, 85, 105);
+.project:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.25);
+    transition: transform .2s;
 }
 
 .tools {
@@ -231,16 +277,18 @@ section#Contact {
 .fa-js-square {
     color: rgb(239, 241, 108);
     padding: 12px;
+    transition: all .2s ease-in-out;
 }
 
 .fa-js-square:hover {
-    color: rgb(255, 251, 0);
+    color: rgb(255, 238, 0);
     transition: all .2s ease-in-out;
 }
 
 .fa-node {
     color: rgb(99, 177, 54);
     padding: 12px;
+    transition: all .2s ease-in-out;
 }
 
 .fa-node:hover {
@@ -251,6 +299,7 @@ section#Contact {
 .fa-html5 {
     color: rgb(233, 154, 65);
     padding: 12px;
+    transition: all .2s ease-in-out;
 }
 
 .fa-html5:hover {
@@ -261,6 +310,7 @@ section#Contact {
 .fa-css3-alt {
     color: rgb(65, 110, 235);
     padding: 12px;
+    transition: all .2s ease-in-out;
 }
 
 .fa-css3-alt:hover {
@@ -271,6 +321,7 @@ section#Contact {
 .fa-angular {
     color: rgb(235, 65, 93);
     padding: 12px;
+    transition: all .2s ease-in-out;
 }
 
 .fa-angular:hover {
@@ -281,9 +332,37 @@ section#Contact {
 .fa-react {
     color: rgb(65, 173, 235);
     padding: 12px;
+    transition: all .2s ease-in-out;
 }
 
 .fa-react:hover {
     color: rgb(12, 158, 243);
     transition: all .2s ease-in-out;
+}
+
+.mongoIcon {
+    margin-bottom: -10px;
+    opacity: 10;
+}
+
+.footer {
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(181, 163, 163);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(181, 163, 163);
 }

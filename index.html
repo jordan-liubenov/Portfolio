@@ -9,7 +9,7 @@
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <title>PortfolioJL</title>
-    <link rel="icon" type="image/x-icon" href="favBot.png">
+    <link rel="icon" type="image/x-icon" href="/img/favBot.png" >
 </head>
 
 <body>
@@ -17,8 +17,7 @@
         <nav class="navbar">
 
             <div class="emblem">
-                <!-- <img class ="mae" src="mae.png"  width="70" height="50">-->
-                <h4>My Portfolio</h4>
+                <h4 class="myPort">My Portfolio</h4>
             </div>
             <ul class="links">
                 <li>
@@ -44,29 +43,35 @@
             <p class="aboutMe">Web Developer</p>
             <div class="tools">
                 <i class="fab fa-js-square fa-5x"></i>
+                <i class="fab fa-react fa-5x"></i>
                 <i class="fab fa-node fa-5x"></i>
                 <i class="fab fa-html5 fa-5x"></i>
                 <i class="fab fa-css3-alt fa-5x"></i>
-               <!-- <i class="fab fa-angular fa-5x"></i>
-                <i class="fab fa-react fa-5x"></i>-->
+                <img class="mongoIcon" src="/img/mongo.png" width="80" height="80">
+               <!-- <i class="fab fa-angular fa-5x"></i> -->
             </div>
 
         </section>
 
         <section id="About">
             <h1>About me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, totam?</p>
+            <p style="width: 70%;">Hi! I'm Jordan, a creative and passionate programmer and web developer. I have experience working with back-end technologies such as Express.js and MongoDB 
+                as well as front-end technologies such as React.js. I am constantly striving to improve and develop my skills further any opportunity I have!
+            </p>
         </section>
 
         <section id="Projects">
             <h1 class="proj">My Projects</h1>
+            <p>(Click on them!)</p>
             <div class="projects">
-                <div class="genProject">
-                    <img class="genIMG" src="generator.png" width="550" height="355">
+                <div class="project">
+                   <img class="genIMG" src="/img/generator.png" width="550" height="350">
                 </div>
-
-                <div class="weatherProject">
-                    <img class="weatherIMG" src="weather.png" width="550" height="355">
+                <div class="project">
+                    <img class="weatherIMG" src="/img/weather.png" width="550" height="350">
+                </div>
+                <div class="project">
+                    <img class="timerIMG" src="/img/timer.png" width="550" height="350">
                 </div>
             </div>
         </section>
@@ -77,25 +82,23 @@
                 <a href="https://github.com/jordan-liubenov">
                     <i class="fab fa-github fa-5x"></i>
                 </a>
-
                 <a href="https://www.linkedin.com/in/jordan-liubenov-a92b81228/">
                     <i class="fab fa-linkedin fa-5x"></i>
                 </a>
-
                 <a>
                     <i id="envelope" onclick="displayEmail()" class="fas fa-envelope-square fa-5x"> </i>
                 </a>
-
             </div>
 
             <p id="text" class="adresses">Find me on the following platforms!</p>
             <p id="email" class="mail"></p>
-
-
         </section>
+        <footer class="footer">
+            Copyright &copy; 2022
+          </footer>
     </div>
-
     <script src="script.js"></script>
 </body>
+
 
 </html>
